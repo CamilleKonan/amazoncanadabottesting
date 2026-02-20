@@ -23,7 +23,7 @@ public class WorkflowTesting {
 
         for (String p : prompts) {
             System.out.println("Sending: " + p);
-            chat.sendMessage(p);
+            chat.sendPrompt(p);
             Thread.sleep(5000);
         }
 
