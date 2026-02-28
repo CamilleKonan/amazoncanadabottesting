@@ -1,11 +1,12 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="AmazonChatSuite">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AmazonChatSuite" verbose="1" parallel="false">
 
+    <!-- single test tag -->
     <test name="AmazonChatTests">
-        <classes>
-            <!-- Full class name including package -->
-            <class name="com.cabottesting.tests.AmazonChatTest"/>
-        </classes>
+        <packages>
+            <!-- include all tests under this package -->
+            <package name="com.cabottesting.tests"/>
+        </packages>
     </test>
 
 </suite>
