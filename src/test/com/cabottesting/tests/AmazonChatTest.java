@@ -7,15 +7,13 @@ import org.testng.annotations.Test;
 public class AmazonChatTest extends BaseTest {
 
     @Test
-    public void testAmazonChatWorkflow() throws Exception {
+    public void testAmazonChatWorkflow() {
 
         AmazonChatPage chatPage = new AmazonChatPage(driver);
 
         chatPage.openAmazon();
         chatPage.goToHelpPage();
-        chatPage.startChat();
-
-        chatPage.sendPrompt("Hello, I need help with my order");
+        chatPage.switchToChatFrame();
+        chatPage.handleChatWorkflow("Hello, I need help with my order");
     }
 }
-

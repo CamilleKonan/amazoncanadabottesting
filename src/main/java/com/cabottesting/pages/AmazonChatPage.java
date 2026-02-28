@@ -30,7 +30,7 @@ public class AmazonChatPage {
     // ==============================
     // 2. Navigate to Help Section
     // ==============================
-    public void goToHelpSection() {
+    public void goToHelpPage() {
 
         // Click Help link
         driver.findElement(By.xpath(
